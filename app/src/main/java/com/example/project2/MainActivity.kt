@@ -97,7 +97,7 @@ fun EmissionCalculatorUI(modifier: Modifier = Modifier) {
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Calculate")
+            Text("Порахувати")
         }
 
         // Show the result
@@ -152,8 +152,8 @@ fun computeEmissions(fuel: String, amountText: String): String {
 
     // Return formatted result
     return """
-        Particulate emission factor: ${"%.2f".format(emissionFactor)} g/GJ
-        Total emission: ${"%.2f".format(totalEmission)} tons
+        Показник емісії=: ${"%.2f".format(emissionFactor)} g/GJ
+        Валовий викид: ${"%.2f".format(totalEmission)} tons
     """.trimIndent()
 }
 
